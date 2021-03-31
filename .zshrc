@@ -62,6 +62,11 @@ CASE_SENSITIVE="true"
 # see 'man strftime' for details.
 HIST_STAMPS="yyyy-mm-dd"
 
+# Uncomment the following line if you want to load Homebrew-managed zsh site-functions.
+# Caution: this setting can cause "zsh compinit: insecure directories" warnings when attempting to load these completions
+# See https://docs.brew.sh/Shell-Completion#configuring-completions-in-zsh
+FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
