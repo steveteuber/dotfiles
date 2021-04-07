@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+## General
+
+# Enable dark mode
+defaults write NSGlobalDomain AppleInterfaceStyle Dark
+
+# Set highlight color to red
+defaults write NSGlobalDomain AppleHighlightColor -string "1.000000 0.733333 0.721569 Red"
