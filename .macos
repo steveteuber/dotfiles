@@ -7,3 +7,18 @@ defaults write NSGlobalDomain AppleInterfaceStyle Dark
 
 # Set highlight color to red
 defaults write NSGlobalDomain AppleHighlightColor -string "1.000000 0.733333 0.721569 Red"
+
+
+## Dock
+
+# Hide dock automatically
+defaults write com.apple.dock autohide -bool true
+
+# Don't display recent applications
+defaults write com.apple.dock show-recents -bool false
+
+# Minimize windows into application icon
+defaults write com.apple.dock minimize-to-application -bool true
+
+# Set the icon size to 42 pixels
+defaults write com.apple.dock tilesize -int 42
