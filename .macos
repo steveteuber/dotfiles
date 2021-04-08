@@ -59,3 +59,28 @@ defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 
 # Set default view style to list
 defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
+
+
+## Safari
+
+# Show status bar
+defaults write com.apple.Safari ShowOverlayStatusBar -bool true
+
+# Don't show frequently visited sites
+defaults write com.apple.Safari ShowFrequentlyVisitedSites -bool false
+
+# Don't open downloaded files automatically
+defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
+
+# Show the full URL in the address bar
+defaults write com.apple.Safari ShowFullURLInSmartSearchField -bool true
+
+# Disable auto fill
+defaults write com.apple.Safari AutoFillPasswords -bool false
+defaults write com.apple.Safari AutoFillCreditCardData -bool false
+defaults write com.apple.Safari AutoFillMiscellaneousForms -bool false
+
+# Enable the developer menu
+defaults write com.apple.Safari IncludeDevelopMenu -bool true
+defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
+defaults write com.apple.Safari WebKitPreferences.developerExtrasEnabled -bool true
