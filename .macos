@@ -35,3 +35,27 @@ defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 
 # Enable app exposé
 defaults write com.apple.dock showAppExposeGestureEnabled -bool true
+
+
+## Finder
+
+# Show status bar
+defaults write com.apple.finder ShowStatusBar -bool true
+
+# Show path bar
+defaults write com.apple.finder ShowPathbar -bool true
+
+# Show all filename extensions
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+# Keep folders on top
+defaults write com.apple.finder _FXSortFoldersFirst -bool true
+
+# Disable change file extension warning
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+
+# Set default search scope to current folder
+defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
+
+# Set default view style to list
+defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
