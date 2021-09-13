@@ -1,0 +1,8 @@
+[core]
+	excludesfile = ~/.gitignore
+
+[pull]
+	rebase = true
+
+[help]
+	autocorrect = 10
