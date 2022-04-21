@@ -105,3 +105,4 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias act='act -s GITHUB_TOKEN=$(op get item GitHub --fields GITHUB_TOKEN)'
