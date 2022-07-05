@@ -3,3 +3,8 @@
 # hash: {{ include "dot_Brewfile" | sha256sum }}
 echo "Installing homebrew packages..."
 brew bundle --global --cleanup
+
+if [[ ! -S /var/run/docker.sock ]]; then
+  echo "Installing podman helper..."
+  sudo podman-mac-helper install
+fi
