@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# hash: {{ include "dot_Brewfile" | sha256sum }}
+echo "Installing homebrew packages..."
+brew bundle --global --cleanup
