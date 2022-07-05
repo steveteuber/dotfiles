@@ -1,10 +1,15 @@
 #!/usr/bin/env bash
 
+if [[ ! -x $(command -v brew) ]]; then
+  echo "Installing Homebrew..."
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+fi
+
 # hash: {{ include "dot_Brewfile" | sha256sum }}
-echo "Installing homebrew packages..."
+echo "Installing Homebrew packages..."
 brew bundle --global --cleanup
 
 if [[ ! -S /var/run/docker.sock ]]; then
-  echo "Installing podman helper..."
+  echo "Installing Podman helper..."
   sudo podman-mac-helper install
 fi
