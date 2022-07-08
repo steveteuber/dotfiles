@@ -1,0 +1,12 @@
+edit:
+  command: code
+  args:
+  - --wait
+
+diff:
+  exclude:
+  - scripts
+
+data:
+  name: {{ or (.name) (promptString "name") }}
+  email: {{ or (.email) (promptString "email") }}
