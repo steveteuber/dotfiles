@@ -45,6 +45,7 @@ brew "terraform"
 brew "tidy-html5"
 brew "tree"
 brew "vault"
+brew "watch"
 brew "wget"
 brew "yq"
 
