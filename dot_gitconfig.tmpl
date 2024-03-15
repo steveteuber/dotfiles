@@ -38,3 +38,8 @@
   smudge = git-lfs smudge -- %f
   process = git-lfs filter-process
   required = true
+
+{{ if .idealo -}}
+[includeIf "gitdir:~/Projects/github.com/idealo/"]
+  path = ~/.gitconfig-idealo
+{{ end -}}

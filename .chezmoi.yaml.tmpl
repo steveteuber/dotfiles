@@ -8,5 +8,6 @@ diff:
   - scripts
 
 data:
-  name: {{ or (.name) (promptString "name") }}
-  email: {{ or (.email) (promptString "email") }}
+  name: {{ promptStringOnce . "name" "What is your full name" }}
+  email: {{ promptStringOnce . "email" "What is your email address" }}
+  idealo: {{ promptBoolOnce . "idealo" "Include idealo specific configuration"}}
