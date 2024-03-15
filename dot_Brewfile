@@ -6,6 +6,7 @@ tap "homebrew/cask"
 # Binaries
 brew "act"
 brew "awscli"
+brew "bash"
 brew "cdktf"
 brew "chezmoi"
 brew "coreutils"
