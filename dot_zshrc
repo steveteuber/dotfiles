@@ -75,9 +75,10 @@ FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(aws git gh oc dotenv)
+plugins=(1password aws dotenv git gh oc)
 
 source $ZSH/oh-my-zsh.sh
+source $HOME/.config/op/plugins.sh
 
 # User configuration
 
@@ -104,5 +105,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+setopt completealiases
+
 alias dotfiles='chezmoi'
 alias act='act -s GITHUB_TOKEN=$(op item get GitHub --fields GITHUB_TOKEN)'
