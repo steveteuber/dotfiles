@@ -72,6 +72,7 @@ cask "skitch"
 cask "synology-drive"
 cask "viscosity"
 cask "visual-studio-code"
+cask "zed"
 
 # App Store
 mas "Adblock Plus", id: 1432731683
