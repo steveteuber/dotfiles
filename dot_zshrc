@@ -77,6 +77,9 @@ FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(1password aws dotenv git gh ghc oc)
 
+# Uncomment to persist the aws profile between shell sessions
+AWS_PROFILE_STATE_ENABLED=true
+
 source $ZSH/oh-my-zsh.sh
 source $HOME/.config/op/plugins.sh
 
