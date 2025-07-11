@@ -111,4 +111,5 @@ source $HOME/.config/op/plugins.sh
 setopt completealiases
 
 alias dotfiles='chezmoi'
-alias act='act -s GITHUB_TOKEN=$(op item get GitHub --fields GITHUB_TOKEN)'
+alias act='act -s GITHUB_TOKEN="$(gh auth token)"'
+alias pulumi='GITHUB_TOKEN="$(gh auth token)" pulumi'
