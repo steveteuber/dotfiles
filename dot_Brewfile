@@ -74,6 +74,7 @@ cask "synology-drive"
 cask "viscosity"
 cask "visual-studio-code"
 cask "zed"
+cask "zen"
 
 # App Store
 mas "Adblock Plus", id: 1432731683
