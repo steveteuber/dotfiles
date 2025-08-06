@@ -1,0 +1,17 @@
+
+# Commit message format:
+#   <type>(<optional scope>): <description>
+#
+# Commit message types:
+#   feat:       A new feature
+#   fix:        A bug fix
+#   docs:       Documentation only changes
+#   style:      Changes that don't affect the meaning of the code
+#   refactor:   A code change that neither is a feature nor a fix
+#   perf:       A code change that improves performance
+#   test:       Adding or updating tests
+#   build:      Changes that affect the build system
+#   ci:         Changes to our CI configuration files and scripts
+#   chore:      Other changes that don't modify src or test files
+#   revert:     Revert a previous commit
+#
