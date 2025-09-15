@@ -2,6 +2,7 @@
 tap "homebrew/bundle"
 tap "homebrew/cask-drivers"
 tap "homebrew/cask"
+tap "hashicorp/tap"
 
 # Binaries
 brew "act"
