@@ -75,7 +75,7 @@ FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(1password aws dotenv git gh ghc oc)
+plugins=(1password aws dotenv git gh oc)
 
 # Uncomment to persist the aws profile between shell sessions
 AWS_PROFILE_STATE_ENABLED=true
