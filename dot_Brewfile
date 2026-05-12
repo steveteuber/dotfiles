@@ -53,32 +53,31 @@ brew "yq"
 # Apps
 cask "1password-cli"
 cask "1password"
-cask "agenda"
-cask "alfred"
+#cask "agenda"
+#cask "alfred"
 cask "copilot-cli"
-cask "dash@6"
+#cask "dash@6"
 cask "google-chrome"
 cask "iterm2"
-cask "monitorcontrol"
+#cask "monitorcontrol"
 cask "neo4j-desktop"
-cask "ngrok"
+#cask "ngrok"
 cask "obsidian"
 cask "pop-app"
 cask "rapidapi"
 cask "raycast"
-cask "skitch"
-cask "synology-drive"
-cask "viscosity"
+#cask "synology-drive"
+#cask "viscosity"
 cask "visual-studio-code"
 cask "vivaldi"
 cask "zed"
 cask "zen"
 
 # App Store
-mas "Adblock Plus", id: 1432731683
-mas "Apple Configurator 2", id: 1037126344
-mas "Magnet", id: 441258766
-mas "MindNode", id: 1289197285
-mas "Save to Pocket", id: 1477385213
-mas "1Password for Safari", id: 1569813296
-mas "Obsidian Web Clipper", id: 6720708363
+#mas "Adblock Plus", id: 1432731683
+#mas "Apple Configurator 2", id: 1037126344
+#mas "Magnet", id: 441258766
+#mas "MindNode", id: 1289197285
+#mas "Save to Pocket", id: 1477385213
+#mas "1Password for Safari", id: 1569813296
+#mas "Obsidian Web Clipper", id: 6720708363
