@@ -6,8 +6,8 @@ if [[ ! -x $(command -v brew) ]]; then
 fi
 
 if [[ ! -x $(command -v op) ]]; then
-  echo "Installing 1Password CLI..."
-  brew install --cask "1password-cli"
+  echo "Installing 1Password..."
+  brew install --cask 1password 1password-cli
 fi
 
 if [[ ! -d ~/.oh-my-zsh ]]; then
