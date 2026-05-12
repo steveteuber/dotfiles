@@ -1,0 +1,67 @@
+/** Remove accent color from address bar */
+.mainbar {
+  background: #404040 !important;
+  color: #ffffff !important;
+  border-color: #303030 !important;
+}
+
+/* Increase the font size of the address bar */
+.UrlBar-AddressField {
+  font-size: 14px;
+}
+
+/* Increase the padding of all items in the omnibox */
+.UrlBar-AddressField .OmniLinkItem {
+  padding: 10px;
+}
+
+/* .tab {
+  border-radius: 6px !important;
+  padding-right: 6px;
+}
+
+.tab .close {
+  margin-right: 0px !important;
+} */
+
+/* Remove the glow effect from favicon */
+#browser .tab.active .tab-header .favicon:not(.svg) {
+  filter: none !important;
+}
+
+/* Change the background color of the active tab */
+#tabs-subcontainer .tab.active {
+  background-color: var(--colorAccentBg) !important;
+}
+
+/* Add spacing between tooltip items */
+#vivaldi-tooltip .tooltip .tooltip-item {
+  margin-top: 6px;
+}
+
+/* Remove the border from a stacked tab */
+/* .svg-tab-stack .stack-frame {
+  stroke: none !important;
+} */
+
+/* Add border radius to the status info */
+.StatusInfo .StatusInfo-Content {
+  border-radius: 6px !important;
+  font-size: 12px;
+}
+
+/* Remove the background color from the tree view */
+.vivaldi-tree .tree-row {
+  background-color: transparent !important;
+}
+
+/* Use background blur on certain elements */
+.startpage .startpage-navigation,
+.manager .manager-content,
+.manager > .toolbar,
+.sortselector,
+.find-in-page-wrapper,
+.NotesManager {
+  background-color: var(--colorBgAlphaBlur) !important;
+  box-shadow: none;
+}
