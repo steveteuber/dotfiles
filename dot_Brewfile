@@ -1,6 +1,4 @@
 # Taps
-tap "homebrew/bundle"
-tap "homebrew/cask"
 tap "hashicorp/tap"
 
 # Binaries
