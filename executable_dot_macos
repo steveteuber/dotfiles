@@ -9,6 +9,12 @@ defaults write -globalDomain AppleInterfaceStyle Dark
 #defaults write -globalDomain AppleHighlightColor -string "1.000000 0.733333 0.721569 Red"
 
 
+## Menu Bar
+
+# Hide menu bar automatically
+defaults write -globalDomain _HIHideMenuBar -bool true
+
+
 ## Dock
 
 # Hide dock automatically
