@@ -64,6 +64,15 @@ defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 
 
+## iTerm2
+
+# Specify the preferences directory
+defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/.config/iterm2/settings/"
+
+# Load preferences from the custom directory
+defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true
+
+
 ## Safari
 
 # Show status bar
