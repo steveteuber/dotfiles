@@ -1,5 +1,5 @@
 {{- if .idealo -}}
 [user]
-  email = {{ (onepasswordItemFields "GitHub Signing Key" "Private" "idealo").email.value }}
-  signingkey = {{ (onepasswordDetailsFields "GitHub Signing Key" "Private" "idealo").public_key.value }}
+  email = {{ onepasswordRead "op://Private/GitHub Signing Key/email" "idealo" }}
+  signingkey = {{ onepasswordRead "op://Private/GitHub Signing Key/public_key" "idealo" }}
 {{- end }}

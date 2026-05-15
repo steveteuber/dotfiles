@@ -1,7 +1,7 @@
 [user]
   name = {{ .name }}
-  email = {{ (onepasswordItemFields "GitHub SSH Signing Key" "Private" "my").email.value }}
-  signingkey = {{ (onepasswordDetailsFields "GitHub SSH Signing Key" "Private" "my").public_key.value }}
+  email = {{ onepasswordRead "op://Private/GitHub Signing Key/email" "my" }}
+  signingkey = {{ onepasswordRead "op://Private/GitHub Signing Key/public_key" "my" }}
 
 [core]
   excludesfile = ~/.gitignore
