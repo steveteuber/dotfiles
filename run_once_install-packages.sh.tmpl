@@ -3,8 +3,3 @@
 # hash: {{ include "dot_Brewfile" | sha256sum }}
 echo "Installing Homebrew packages..."
 brew bundle --global --cleanup
-
-if [[ ! -f /Library/LaunchDaemons/com.github.containers.podman.helper-$USER.plist ]]; then
-  echo "Installing Podman helper..."
-  sudo podman-mac-helper install
-fi
