@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+source "${CHEZMOI_SOURCE_DIR}/.chezmoi.lib.sh"
+
 # hash: {{ include "executable_dot_macos" | sha256sum }}
-echo "Applying macos settings..."
+step "Applying macOS settings..."
 $HOME/.macos

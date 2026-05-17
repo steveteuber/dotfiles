@@ -1,14 +1,16 @@
 #!/usr/bin/env bash
 
+source "${CHEZMOI_SOURCE_DIR}/.chezmoi.lib.sh"
+
 if [[ ! -f /Library/LaunchDaemons/com.github.containers.podman.helper-$USER.plist ]]; then
-  echo "Installing Podman helper..."
+  step "Installing Podman helper..."
   sudo podman-mac-helper install
 fi
 
 if [[ ! $(podman machine ls -q) ]]; then
-  echo "Creating Podman machine..."
+  step "Creating Podman machine..."
   podman machine init -v /Users:/Users --rootful
   podman machine start
-  podman machine ssh "sudo sed -i 's/SELINUX=enforcing/SELINUX=permissive/' /etc/selinux/config"
+  podman machine ssh "sed -i 's/^SELINUX=.*/SELINUX=permissive/' /etc/selinux/config"
   podman machine stop
 fi
