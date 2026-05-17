@@ -36,9 +36,6 @@ defaults write -globalDomain com.apple.trackpad.scaling -float 0.875
 # Disable natural scrolling
 defaults write -globalDomain com.apple.swipescrolldirection -bool false
 
-# Enable app exposé
-defaults write com.apple.dock showAppExposeGestureEnabled -bool true
-
 
 ## Finder
 
