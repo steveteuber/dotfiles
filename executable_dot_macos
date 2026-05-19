@@ -70,6 +70,12 @@ defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/.config/iterm2
 defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true
 
 
+## Music
+
+# Disable AutoMix transitions
+defaults write com.apple.Music TransitionsEnabled -bool false
+
+
 ## Safari
 
 # Use compact tab bar
