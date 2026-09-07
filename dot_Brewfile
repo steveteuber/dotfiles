@@ -51,6 +51,7 @@ brew "tidy-html5"
 brew "tree"
 brew "watch"
 brew "wget"
+brew "xq"
 brew "yq"
 
 # Apps
