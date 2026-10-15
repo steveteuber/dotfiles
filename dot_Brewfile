@@ -2,7 +2,6 @@
 tap "hashicorp/tap", trusted: true
 
 # Binaries
-brew "act"
 brew "awscli"
 brew "bash"
 brew "bat"

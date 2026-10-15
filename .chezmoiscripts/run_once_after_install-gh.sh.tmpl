@@ -1,0 +1,11 @@
+#!/usr/bin/env -S bash -O expand_aliases
+
+source "${CHEZMOI_SOURCE_DIR}/.chezmoi.lib.sh"
+source "${CHEZMOI_SOURCE_DIR}/dot_config/private_op/plugins.sh"
+
+# hash: {{ include "dot_config/gh/extensions.txt" | sha256sum }}
+step "Installing GitHub CLI extensions..."
+while read ext; do gh extension install "$ext"; done < ~/.config/gh/extensions.txt
+
+step "Upgrading all GitHub CLI extensions..."
+gh extension upgrade --all
